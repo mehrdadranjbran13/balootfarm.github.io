@@ -1,1 +1,318 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دامداری شیری بلوط | برادران رنجبران</title>
+<meta name="description" content="دامداری شیری بلوط، تولیدکننده شیر خام با مدیریت برادران رنجبران">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --green: #09251d;
+  --green2: #103b2e;
+  --gold: #d6b46a;
+  --cream: #f5f1e7;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Vazirmatn',Tahoma,sans-serif;
+  background:var(--green);
+  color:var(--cream);
+  line-height:2;
+}
+a { color:inherit; text-decoration:none; }
+header {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(9,37,29,.96);
+  border-bottom:1px solid rgba(214,180,106,.25);
+  padding:16px 7%;
+}
+.nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.logo {
+  color:var(--gold);
+  font-size:23px;
+  font-weight:800;
+}
+nav { display:flex; gap:25px; flex-wrap:wrap; }
+nav a { font-size:14px; transition:.3s; }
+nav a:hover { color:var(--gold); }
+
+.hero {
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:90px 7%;
+  background:radial-gradient(ellipse at center,#174633 0%,#09251d 72%);
+}
+.hero-content { max-width:850px; }
+.tag {
+  display:inline-block;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  padding:5px 20px;
+  border-radius:30px;
+  font-size:13px;
+  margin-bottom:25px;
+}
+h1 {
+  font-size:clamp(35px,6vw,65px);
+  line-height:1.5;
+  font-weight:800;
+}
+h1 span { color:var(--gold); }
+.hero p {
+  max-width:650px;
+  margin:20px auto 30px;
+  color:#d0d9d2;
+}
+.btn {
+  display:inline-block;
+  padding:12px 30px;
+  background:var(--gold);
+  color:#14251c;
+  border-radius:5px;
+  font-weight:700;
+  transition:.3s;
+}
+.btn:hover { background:#f0d18c; transform:translateY(-3px); }
+
+section { padding:85px 8%; }
+.section-title { text-align:center; margin-bottom:45px; }
+.section-title small { color:var(--gold); }
+.section-title h2 { font-size:32px; margin-top:8px; }
+.section-title p { color:#b9c8bf; margin-top:8px; }
+
+.about {
+  background:var(--cream);
+  color:#17372b;
+  text-align:center;
+}
+.about p {
+  max-width:850px;
+  margin:auto;
+  font-size:17px;
+}
+.about .section-title p { color:#627168; }
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+.card {
+  background:var(--green2);
+  border:1px solid rgba(214,180,106,.25);
+  border-radius:12px;
+  padding:30px 24px;
+  transition:.3s;
+}
+.card:hover {
+  transform:translateY(-7px);
+  border-color:var(--gold);
+}
+.card .number {
+  color:var(--gold);
+  font-size:28px;
+  font-weight:800;
+}
+.card h3 { margin:10px 0; color:var(--gold); }
+.card p { color:#d0d9d2; font-size:14px; }
+
+.production {
+  background:#0d3025;
+  text-align:center;
+}
+.production-box {
+  max-width:800px;
+  margin:auto;
+  border:1px solid var(--gold);
+  padding:40px;
+  border-radius:12px;
+}
+.production-box h3 { color:var(--gold); font-size:25px; margin-bottom:15px; }
+.production-box p { color:#d0d9d2; }
+
+.management {
+  text-align:center;
+  background:var(--cream);
+  color:#17372b;
+}
+.management .section-title p { color:#627168; }
+.manager-name {
+  font-size:29px;
+  color:#98752f;
+  font-weight:800;
+  margin-top:15px;
+}
+.contact { text-align:center; }
+.contact-box {
+  max-width:700px;
+  margin:auto;
+  background:var(--green2);
+  padding:35px;
+  border-radius:12px;
+  border:1px solid rgba(214,180,106,.4);
+}
+.contact-box p { margin:10px 0; }
+.contact-box strong { color:var(--gold); }
+
+footer {
+  text-align:center;
+  padding:25px;
+  border-top:1px solid rgba(214,180,106,.25);
+  color:#b9c8bf;
+  font-size:13px;
+}
+footer span { color:var(--gold); }
+
+@media(max-width:650px) {
+  header { padding:14px 5%; }
+  .nav { justify-content:center; }
+  nav { justify-content:center; gap:15px; }
+  section { padding:65px 6%; }
+  .hero { min-height:500px; }
+  .production-box { padding:25px 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">بلوط | BALOOT</div>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#about">درباره ما</a>
+      <a href="#activities">فعالیت‌ها</a>
+      <a href="#production">تولیدات</a>
+      <a href="#management">مدیریت</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">کیفیت، تعهد، اصالت</div>
+    <h1>دامداری شیری <span>بلوط</span></h1>
+    <p>
+      فعالیت تخصصی در زمینه پرورش گاو شیری و تولید شیر خام
+      با رویکردی حرفه‌ای، پایدار و مبتنی بر کیفیت.
+    </p>
+    <a href="#about" class="btn">آشنایی با بلوط</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <small>ABOUT BALOOT</small>
+    <h2>درباره دامداری بلوط</h2>
+  </div>
+  <p>
+    دامداری شیری بلوط با هدف فعالیت حرفه‌ای در صنعت دامپروری،
+    در زمینه پرورش و نگهداری گاوهای شیری و تولید شیر خام فعالیت می‌کند.
+    ما کیفیت، مسئولیت‌پذیری و استمرار در تولید را از اصول اصلی
+    فعالیت خود می‌دانیم.
+  </p>
+</section>
+
+<section id="activities">
+  <div class="section-title">
+    <small>OUR ACTIVITIES</small>
+    <h2>حوزه فعالیت ما</h2>
+    <p>تمرکز بر تولید اصولی و مدیریت حرفه‌ای دامداری</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="number">01</div>
+      <h3>پرورش گاو شیری</h3>
+      <p>نگهداری و پرورش دام با توجه به اصول دامپروری و سلامت گله.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">02</div>
+      <h3>تولید شیر خام</h3>
+      <p>تولید شیر خام به عنوان محصول اصلی مجموعه.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">03</div>
+      <h3>مدیریت دامداری</h3>
+      <p>نظارت بر روند فعالیت‌ها و مدیریت امور روزانه مجموعه.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">04</div>
+      <h3>تأمین مواد اولیه</h3>
+      <p>عرضه شیر خام تولیدی به کارخانه‌ها و واحدهای فرآوری لبنیات.</p>
+    </div>
+  </div>
+</section>
+
+<section class="production" id="production">
+  <div class="section-title">
+    <small>OUR PRODUCTION</small>
+    <h2>تولیدات بلوط</h2>
+  </div>
+
+  <div class="production-box">
+    <h3>شیر خام</h3>
+    <p>
+      محصول اصلی دامداری شیری بلوط، شیر خام تولیدشده از گله گاوهای شیری است.
+      این محصول برای تحویل به کارخانه‌ها و مجموعه‌های فرآوری لبنیات عرضه می‌شود.
+    </p>
+  </div>
+</section>
+
+<section class="management" id="management">
+  <div class="section-title">
+    <small>MANAGEMENT</small>
+    <h2>مدیریت مجموعه</h2>
+    <p>مدیریت و راهبری دامداری شیری بلوط</p>
+  </div>
+  <div class="manager-name">برادران رنجبران</div>
+  <p>Managed by Ranjbaran Brothers</p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <small>CONTACT US</small>
+    <h2>ارتباط با ما</h2>
+    <p>برای همکاری و ارتباط با مجموعه بلوط</p>
+  </div>
+
+  <div class="contact-box">
+    <p><strong>نام مجموعه:</strong> دامداری شیری بلوط</p>
+    <p><strong>مدیریت:</strong> برادران رنجبران</p>
+    <p><strong>زمینه فعالیت:</strong> پرورش گاو شیری و تولید شیر خام</p>
+    <p>اطلاعات تماس به‌زودی تکمیل خواهد شد.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© تمامی حقوق متعلق به <span>دامداری شیری بلوط</span> است.</p>
+  <p>Managed by Ranjbaran Brothers</p>
+</footer>
+
+</body>
+</html>
+
