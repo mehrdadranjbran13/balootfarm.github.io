@@ -13,7 +13,14 @@ a{text-decoration:none;color:inherit}
 header{background:#09251d;border-bottom:1px solid #d6b46a;padding:15px 5%}
 .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
 .logo{direction:ltr;color:#d6b46a;font-family:Georgia,serif;font-size:27px;font-weight:bold}
-nav{grid-column:2;display:flex;gap:28px;justify-content:center}
+nav{grid-column:2;display:flex;gap:28px;justify-content:center
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
 nav a{color:#f5f1e7;font-size:15px}
 nav a:hover{color:#d6b46a}
 .nav-spacer{justify-self:end}
