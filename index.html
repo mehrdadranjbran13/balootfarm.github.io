@@ -5,105 +5,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دامداری شیری بلوط | Baloot Farm</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Vazirmatn, Tahoma, sans-serif;
-    background: #09251d;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-header {
-    background: #09251d;
-    border-bottom: 1px solid #d6b46a;
-    padding: 15px 5%;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo {
-    direction: ltr;
-    color: #d6b46a;
-    font-family: Georgia, serif;
-    font-size: 27px;
-    font-weight: bold;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    gap: 28px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #f5f1e7;
-    font-size: 15px;
-}
-
-nav a:hover {
-    color: #d6b46a;
-}
-
-.hero-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: calc(100vh - 110px);
-    object-fit: cover;
-}
-
-@media(max-width:650px) {
-    .logo {
-        font-size: 25px;
-    }
-
-    nav {
-        gap: 20px;
-    }
-}
-</style>
+<title>دامداری شیری بلوط | از ۱۳۷۶ در نظرآباد البرز</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-    <div class="nav">
-
-        <a class="logo" href="index.html">Baloot Farm</a>
-
-        <nav>
-            <a href="sales.html">فروش</a>
-            <a href="about.html">درباره ما</a>
-            <a href="contact.html">ارتباط با ما</a>
-        </nav>
-
-    </div>
-</header>
-
-<div class="hero-image">
-    <img src="baloot-farm-banner.png" alt="گاوها و گوساله‌های دامداری بلوط">
+<div class="topbar">
+<div class="container topbar-inner">
+<span>📍 البرز، نظرآباد، جاده احمدآباد مصدق</span>
+<span>مدیریت: برادران رنجبران</span>
+<span><a href="tel:09123359849">09123359849</a> | <a href="tel:09123175163">09123175163</a></span>
 </div>
-
+</div>
+<header class="header">
+<div class="container header-inner">
+<a href="index.html" class="logo">
+<span class="logo-mark">🌳</span>
+<span><strong>دامداری شیری بلوط</strong><small>تأسیس ۱۳۷۶ | نظرآباد البرز</small></span>
+</a>
+<nav class="nav" id="nav">
+<a href="index.html" class="active">خانه</a>
+<a href="about.html">درباره ما</a>
+<div class="dropdown"><a href="#">فروش ▾</a><div class="dropdown-menu"><a href="milk.html">فروش شیر خام</a><a href="calf.html">فروش گوساله نر</a></div></div>
+<a href="cooperation.html">همکاری با ما</a>
+<a href="contact.html" class="btn-small">تماس با ما</a>
+</nav>
+<button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div>
+</header>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="badge">از دامداری تا خانه | از سال ۱۳۷۶</span>
+<h1>دامداری شیری بلوط<br><span>شیر سالم، تازه و بدون واسطه</span></h1>
+<p>ما با مدیریت برادران رنجبران در جاده احمدآباد مصدق نظرآباد، تمام زنجیره تولید از علوفه و پرورش تا دوشش و تحویل شیر خام را خودمان مدیریت می‌کنیم. بدون مواد نگه‌دارنده، با آزمایش روزانه.</p>
+<div class="hero-btns"><a href="milk.html" class="btn">سفارش شیر خام</a><a href="about.html" class="btn outline">درباره دامداری</a></div>
+<div class="stats">
+<div><strong>۱۳۷۶</strong><small>سال تأسیس</small></div>
+<div><strong>+۲۷ سال</strong><small>تجربه دامداری</small></div>
+<div><strong>۱۰۰٪</strong><small>طبیعی و تازه</small></div>
+</div>
+</div>
+<div class="hero-card">
+<h3>🐄 امروز در بلوط</h3>
+<ul><li>دوشش دومرحله‌ای بهداشتی</li><li>تانکر سرد ۴ درجه تا درب کارخانه</li><li>فروش مستقیم گوساله نر سالم</li></ul>
+<p class="addr">📍 البرز، نظرآباد، جاده احمدآباد مصدق</p>
+<p>📞 <a href="tel:09123359849">09123359849</a><br>📞 <a href="tel:09123175163">09123175163</a></p>
+<a href="contact.html" class="btn full">مسیر و تماس</a>
+</div>
+</div>
+</section>
+<section class="section"><div class="container">
+<span class="kicker">دیدگاه ما</span>
+<h2>تولید شیر با استاندارد جهانی</h2>
+<p class="lead">دامداری شیری بلوط با تکیه بر تجربه از سال ۱۳۷۶، تغذیه علمی دام، بهداشت جایگاه و نیروی متخصص، شیر خامی تولید می‌کند که با اطمینان وارد سفره خانواده و چرخه کارخانه‌ها می‌شود. هدف ما تأمین بخشی از نیاز غذایی کشور و افزایش رضایت مصرف‌کننده است.</p>
+<div class="cards3">
+<div class="card"><h3>🌾 علوفه اختصاصی</h3><p>کشت و تأمین علوفه در اراضی نظرآباد با نظارت مستقیم برادران رنجبران.</p></div>
+<div class="card"><h3>🔬 کنترل کیفیت</h3><p>تست تب مالت، بار میکروبی و چربی روزانه پیش از هر ارسال.</p></div>
+<div class="card"><h3>❄️ زنجیره سرد</h3><p>سردسازی فوری و حمل با تانکر ایزوله برای حفظ تازگی.</p></div>
+</div>
+</div></section>
+<section class="section cream"><div class="container grid2">
+<div><span class="kicker">دامداری تا خانه</span><h2>شعار ما: از دامداری تا خانه</h2><p>مشتری مبدأ شیر، تغذیه دام، محل نگهداری و شرایط دوشش را می‌شناسد. برای همین با اعتماد از ما خرید می‌کند.</p>
+<ol class="steps"><li><strong>۱. پرورش سالم:</strong> جایگاه تهویه‌دار و واکسیناسیون کامل</li><li><strong>۲. دوشش بهداشتی:</strong> شیردوش مکانیزه و شست‌وشوی اتومات</li><li><strong>۳. سردسازی:</strong> رسیدن به ۴ درجه در کمتر از یک ساعت</li><li><strong>۴. تحویل سریع:</strong> ارسال روزانه در نظرآباد و البرز</li></ol></div>
+<div class="imgbox">🐄🥛<small>سالن شیردوشی بلوط ـ نظرآباد</small></div>
+</div></section>
+<section class="section"><div class="container">
+<span class="kicker">تاریخچه بلوط</span><h2>ریشه ما از ۱۳۷۶</h2>
+<p class="lead">دامداری شیری بلوط در سال ۱۳۷۶ توسط خانواده رنجبران پایه‌گذاری شد و امروز با مدیریت برادران رنجبران اداره می‌شود.</p>
+<div class="cards3">
+<div class="card"><strong>۱۳۷۶ ـ شروع</strong><p>تأسیس دامداری سنتی با ۲۰ رأس در احمدآباد مصدق.</p></div>
+<div class="card"><strong>۱۳۸۸ ـ توسعه</strong><p>افزایش به ۱۵۰ رأس هلشتاین و ساخت سالن صنعتی.</p></div>
+<div class="card"><strong>۱۴۰۰ تا امروز</strong><p>مکانیزاسیون کامل، سردخانه شیر و فروش مستقیم سراسری.</p></div>
+</div>
+<center><a href="about.html#history" class="btn outline">خواندن تاریخچه کامل</a></center>
+</div></section>
+<section class="section cream"><div class="container">
+<span class="kicker">فروش مستقیم</span><h2>دو محصول اصلی ما</h2>
+<div class="cards2">
+<div class="card big"><h3>🥛 فروش شیر خام</h3><p>شیر خام گاو تازه روزانه، چربی و پروتئین تضمینی، مناسب لبنیاتی‌ها، بستنی‌سازی و مصرف عمده. فروش تانکری و بشکه‌ای.</p><a href="milk.html" class="btn">صفحه فروش شیر خام ←</a></div>
+<div class="card big"><h3>🐂 فروش گوساله نر</h3><p>گوساله نر هلشتاین و دورگ سالم، واکسینه و شناسنامه‌دار، مناسب پرواربندی. بازدید حضوری در دامداری.</p><a href="calf.html" class="btn">صفحه فروش گوساله ←</a></div>
+</div>
+</div></section>
+<section class="coop-banner"><div class="container">
+<h2>همکاری با دامداری بلوط</h2><p>خرید عمده شیر، نمایندگی پخش، تأمین علوفه و اشتغال | پاسخ‌گویی: برادران رنجبران</p>
+<p class="bigphone">📞 <a href="tel:09358218321">09358218321</a></p>
+<a href="cooperation.html" class="btn light">فرم همکاری با ما</a>
+</div></section>
+<footer class="footer"><div class="container foot-grid">
+<div><h4>دامداری شیری بلوط</h4><p>مدیریت: برادران رنجبران<br>تأسیس ۱۳۷۶<br>📍 البرز، نظرآباد، جاده احمدآباد مصدق</p></div>
+<div><h4>دسترسی</h4><p><a href="about.html">درباره ما</a><br><a href="milk.html">فروش شیر خام</a><br><a href="calf.html">فروش گوساله نر</a><br><a href="cooperation.html">همکاری با ما</a></p></div>
+<div><h4>تماس</h4><p><a href="tel:09123359849">09123359849</a><br><a href="tel:09123175163">09123175163</a><br>همکاری: <a href="tel:09358218321">09358218321</a></p></div>
+</div><p class="copy">© ۱۴۰۵ دامداری شیری بلوط ـ همه حقوق محفوظ است.</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
